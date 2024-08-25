@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HireDuo Website</title>
+  <meta name="title" content="services 1">
+  <meta name="description" content="This is a hiring agency website">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #262840;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .recruitment-consulting-section {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #262840;
+      text-align: center;
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .text-container {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      margin-left: 2px;
+    }
+
+    .text-container h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffc107;
+    }
+
+    .text-container p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .appointment-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #e0a800;
+      color: white;
+      border: 2px solid #ffc107;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .appointment-btn:hover {
+      background-color: #ffc107;
+      color: #262840;
+      transform: translateY(-5px);
+    }
+
+    @media (min-width: 768px) {
+      .recruitment-consulting-section {
+        flex-direction: row;
+        text-align: left;
+        padding: 40px;
+      }
+
+      .image-container {
+        width: 42%;
+        margin-top: 0;
+      }
+
+      .text-container {
+        width: 45%;
+        padding-left: 20px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .image-container {
+        display: none;
+      }
+    }
+
+    /* Form Overlay Styles */
+    /* Overlay Styles */
+.overlay-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 0;
+  box-sizing: border-box;
+  display: none;
+}
+
+/* Form Container Styles */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px; /* Adjusted for better fit */
+  color: #262840;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: auto; /* Adjust to content height */
+  max-height: 90%; /* Ensures it doesn't exceed viewport height */
+  overflow: hidden; /* Hides overflow to avoid scrolling */
+  position: relative; /* Ensure the close button is positioned correctly */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+/* Close Button Styles */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #262840;
+}
+
+/* Form Heading Styles */
+.form-container h2 {
+  margin: 0 0 20px 0;
+  color: #262840;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* Form Label Styles */
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #262840;
+}
+
+/* Form Input and Textarea Styles */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Form Button Styles */
+.form-container button {
+  background-color: #e0a800;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.form-container button:hover {
+  background-color: #ffc107;
+}
+
+  </style>
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="/index.html" class="logo">
+        <li>
+          <img src="/images/logo_new.png" alt="Adex home" class="logo-light">
+          <img src="/images/logo_new.png" alt="Adex home" class="logo-dark">
+        </li>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="">
+          <a href="#" class="logo"></a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="/index.html" class="navbar-link">Home</a></li>
+          <li><a href="/index.html#aboutus" class="navbar-link">About</a></li>
+          <li><a href="/index.html#services" class="navbar-link">Services</a></li>
+          <li><a href="/career/careers.html" class="navbar-link">Careers</a></li>
+          <li><a href="/index.html#Blogs" class="navbar-link">Blog</a></li>
+          <li><a href="/contactus.html" class="navbar-link">Contact Us</a></li>
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-dribbble"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <div class="recruitment-consulting-section">
+    <div style="margin-top: 100px;" class="text-container">
+      <h2 style="font-size: larger;">Tech Outsourcing</h2>
+      <p style="font-size: large; color:white">Tech outsourcing enhances productivity and competitiveness by leveraging cutting-edge technologies. It enables quicker execution, greater flexibility, and efficient risk management, providing a significant market advantage.</p>
+      <p style="font-size: large; color:white">This approach also reduces costs by utilizing a supplier’s infrastructure and offers access to experienced, high-quality staff. Companies can focus on core strengths while benefiting from expert support, leading to improved efficiency and reduced investment needs.</p>
+      <button class="appointment-btn">BOOK APPOINTMENT</button>
+    </div>
+    <div style="margin-top: 50px;" class="image-container">
+      <img src="/images/hero-slide-1.jpg" alt="Recruitment Consulting">
+    </div>
+  </div>
+  <footer class="footer animate-top">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <li>
+            <p class="h4 footer-list-title">HireDuo</p>
+          </li>
+          <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home"> -->
+        </a>
+
+        <p class="footer-text">
+          &copy; 2024 Hireduo Resource Pvt Ltd. <br> All rights reserved.
+        </p>
+        <li>
+          <p class="h4 footer-list-title">+91 81001 47412</p>
+        </li>
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/hireduojobs" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+         
+
+          <li>
+            <a href="https://www.linkedin.com/company/hireduo-resources-private-limited/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+         
+          
+         
+         
+        
+        </ul>
+        
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Address</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Harrington Mansion, Kolkata 700 071, West Bengal, India
+
+
+          </address>
+          </li>
+     
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="/index.html#aboutus" class=" h4 footer-list-title footer-link"> About US </a>
+        </li>
+
+        <li>
+          <a href="/index.html#services" class="footer-link">Services</a>
+        </li>
+
+        <li>
+          <a href="/index.html#Blogs" class="footer-link">Blog</a>
+        </li>
+
+        <li>
+          <a href="/career/careers.html" class="footer-link">Careers</a>
+        </li>
+
+        <li>
+          <!-- <a href="#" class="footer-link">Terms of Use</a> -->
+          <a href="mailto:reachus@hireduo.com" class="footer-link">reachus@hireduo.com</a>
+        </li>
+
+       
+
+      </ul>
+
+      <div class="footer-list">
+        <a href="#" class=" h4 footer-list-title footer-link"> Locate Us </a>
+        <p class="h4 footer-list-title">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2264524638827!2d88.34371147384971!3d22.57063223304526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02773f82d6e9ff%3A0xaef64789d13849ec!2sHireduo%20Resources%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1724306909576!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+        </p>
+
+        <!-- <p class="footer-text">
+          Subscribe to our newsletter to get our news & deals delivered to you.
+        </p> -->
+
+       
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- Form Overlay Section -->
+  <!-- Form Overlay Section -->
+  <div id="appointmentFormOverlay" class="overlay-form">
+    <div class="form-container">
+      <span class="close-btn" onclick="closeForm()">&times;</span>
+      <!-- <h2>Book an Appointment</h2> -->
+      <!-- <form action="/submit_appointment" method="POST"> -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d69a61f4-f3be-4ca2-a82d-6c4abeb76f15">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+       
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+   
+
+// Function to open the appointment form
+function openForm() {
+  document.getElementById('appointmentFormOverlay').style.display = 'flex';
+}
+
+// Function to close the appointment form
+function closeForm() {
+  document.getElementById('appointmentFormOverlay').style.display = 'none';
+}
+
+// Add event listener to the "BOOK APPOINTMENT" button
+document.querySelector('.appointment-btn').addEventListener('click', openForm);
+
+  </script>
+
+  <script src="/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>HireDuo Contact us</title>
+  <meta name="title" content="hireduo Website">
+  <meta name="description" content="This is a hiring agency website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #262840;
+            /* color: #333; */
+            /* background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% ); */
+        }
+
+        .contact-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            /* background-color: #fff; */
+            /* background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% ); */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 80px;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .contact-card {
+            flex: 1;
+            min-width: 280px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-item:hover {
+            background-color: #f9f9f9;
+        }
+
+        .contact-item .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #ffa500;
+        }
+
+        .contact-item h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .contact-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+            line-height: 30px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .social-icons a img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+        }
+
+        .contact-form {
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .form-group:hover {
+            background-color: #f9f9f9;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #ffa500;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #ffa500;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff9000;
+            transform: translateY(-3px);
+        }
+
+        .location-section {
+            margin-top: 40px;
+        }
+
+        .location-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                flex-direction: column;
+            }
+
+            .contact-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <li>
+          <!-- <a href="#" class="navbar-link ">HireDuo</a> -->
+        </li> <img src="/images/logo_new.png"  alt="Adex home" class="logo-light">
+       
+
+        <img src="/images/logo_new.png"  alt="Adex home" class="logo-dark">
+      </a>
+    </li>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="">
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home"> -->
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/index.html" class="navbar-link ">Home</a>
+          </li>
+
+          <li>
+            <a href="/index.html#aboutus" class="navbar-link ">About</a>
+          </li>
+
+          <li>
+            <a href="/index.html#services" class="navbar-link ">Services</a>
+          </li>
+          <li>
+            <a href="/career/careers.html" class="navbar-link ">Careers</a>
+          </li>
+
+          <li>
+            <a href="/index.html#Blogs" class="navbar-link ">Blog</a>
+          </li>
+
+          <li>
+            <a href="/contactus.html" class="navbar-link"> Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!-- <a href="#" class="btn btn-primary">Free Trial</a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1 style="color:white" >Get In Touch</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-card">
+                <div class="contact-item">
+                    <span class="icon">&#x1F4CD;</span> <!-- Address Icon -->
+                    <div>
+                        <h2>Address</h2>
+                        <p>8, Ho Chi Minh Sarani, 3rd Floor, Room No- 28/11, Harrington Mansion, Kolkata – 700 071, West Bengal, India</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#x260E;</span> <!-- Phone Icon -->
+                    <div>
+                        <h2>Phone</h2>
+                        <p>+91 81001 47412</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#x2709;</span> <!-- Email Icon -->
+                    <div>
+                        <h2>Email</h2>
+                        <p>reachus@hireduo.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">&#x1F4F1;</span> <!-- Social Media Icon -->
+                    <div>
+                        <h2>Social Media</h2>
+                        <div class="social-icons">
+                            <a href="#"><img src="/images/icons8-facebook-50.png" alt="Facebook"></a>
+                            <a href="#"><img src="/images/icons8-twitter-50.png" alt="Twitter"></a>
+                            <a href="#"><img src="/images/icons8-linkedin-50.png" alt="LinkedIn"></a>
+                            <a href="#"><img src="/images/icons8-instagram-50.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-card contact-form">
+                <!-- <form action="#" method="POST"> -->
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="d69a61f4-f3be-4ca2-a82d-6c4abeb76f15">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="location-section">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2264524638827!2d88.34371147384971!3d22.57063223304526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02773f82d6e9ff%3A0xaef64789d13849ec!2sHireduo%20Resources%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1723094543401!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> -->
+    </div>
+    <footer class="footer animate-top">
+      <div class="container grid-list">
+  
+        <div class="footer-brand">
+  
+          <a href="#" class="logo">
+            <li>
+              <p class="h4 footer-list-title">HireDuo</p>
+            </li>
+            <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home"> -->
+          </a>
+  
+          <p class="footer-text">
+            &copy; 2024 Hireduo Resource Pvt Ltd. <br> All rights reserved.
+          </p>
+          <li>
+            <p class="h4 footer-list-title">+91 81001 47412</p>
+          </li>
+          <ul class="social-list">
+  
+            <li>
+              <a href="https://www.facebook.com/hireduojobs" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+  
+           
+  
+            <li>
+              <a href="https://www.linkedin.com/company/hireduo-resources-private-limited/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+           
+            
+           
+           
+          
+          </ul>
+          
+  
+        </div>
+  
+        <ul class="footer-list">
+  
+          <li>
+            <p class="h4 footer-list-title">Address</p>
+          </li>
+  
+          <li>
+            <address class="footer-text">
+              Harrington Mansion, Kolkata 700 071, West Bengal, India
+  
+  
+            </address>
+            </li>
+       
+  
+        </ul>
+  
+        <ul class="footer-list">
+  
+          <li>
+            <a href="/index.html#aboutus" class=" h4 footer-list-title footer-link"> About US </a>
+          </li>
+  
+          <li>
+            <a href="/index.html#services" class="footer-link">Services</a>
+          </li>
+  
+          <li>
+            <a href="/index.html#Blogs" class="footer-link">Blog</a>
+          </li>
+  
+          <li>
+            <a href="/career/careers.html" class="footer-link">Careers</a>
+          </li>
+  
+          <li>
+            <!-- <a href="#" class="footer-link">Terms of Use</a> -->
+            <a href="mailto:reachus@hireduo.com" class="footer-link">reachus@hireduo.com</a>
+          </li>
+  
+         
+  
+        </ul>
+  
+        <div class="footer-list">
+          <a href="#" class=" h4 footer-list-title footer-link"> Locate Us </a>
+          <p class="h4 footer-list-title">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2264524638827!2d88.34371147384971!3d22.57063223304526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02773f82d6e9ff%3A0xaef64789d13849ec!2sHireduo%20Resources%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1724306909576!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  
+            </iframe>
+          </p>
+  
+          <!-- <p class="footer-text">
+            Subscribe to our newsletter to get our news & deals delivered to you.
+          </p> -->
+  
+         
+  
+        </div>
+  
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+
+    <!-- 
+      - ionicon
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

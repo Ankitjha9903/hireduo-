@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>HireDuo Website</title>
+  <meta name="title" content="hireduo Website">
+  <meta name="description" content="This is a hiring agency website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .industries {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #191f36;
+}
+
+.industries h2 {
+    font-size: 2.5rem;
+    color: #FFC72C;
+}
+
+.industries p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.industry-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.industry-card {
+    width: 250px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.industry-card img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.industry-card h3 {
+    font-size: 1.25rem;
+    color: #233876;
+}
+  </style>
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/index.html" class="logo">
+        <li>
+          <!-- <a href="#" class="navbar-link ">HireDuo</a> -->
+        </li> <img src="/images/logo_new.png"  alt="Adex home" class="logo-light">
+       
+
+        <img src="/images/logo_new.png"  alt="Adex home" class="logo-dark">
+      </a>
+    </li>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="">
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home"> -->
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/index.html" class="navbar-link ">Home</a>
+          </li>
+
+          <li>
+            <a href="/index.html#aboutus" class="navbar-link ">About</a>
+          </li>
+
+          <li>
+            <a href="/index.html#services" class="navbar-link ">Services</a>
+          </li>
+          <li>
+            <a href="/career/careers.html" class="navbar-link ">Careers</a>
+          </li>
+
+          <li>
+            <a href="/index.html#Blogs" class="navbar-link ">Blog</a>
+          </li>
+
+          <li>
+            <a href="/contactus.html" class="navbar-link"> Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">reachus@hireduo.com</a>
+
+          <a href="tel:001234567890" class="contact-link">+91 81001 47412</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.linkedin.com/company/hireduo-resources-private-limited/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/hireduojobs" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+         
+
+          
+
+          
+
+        </ul>
+
+      </nav>
+
+      <!-- <a href="#" class="btn btn-primary">Free Trial</a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+      style="background:#191f36">
+        <div class="container">
+
+          <div class="hero-content animate-top">
+
+            <h1 class="h1 hero-title animate-top">Talent Acquisition,
+             <span style="color:#FFC72C"> Staffing & HR Solutions </span> </h1>
+
+            <p class="hero-text animate-top">
+              Your one stop platform for Talent Acquisition, Staffing and HR solutions. Drop us your talent requirements today.
+
+
+            </p>
+
+            <div class="btn-wrapper animate-top">
+
+              <a href="index.html#aboutus" class="btn btn-outline animate-top">Explore Now</a>
+
+              <a href="contactus.html" class="btn btn-outline animate-top">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider animate-top" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="/images/slide2.jpeg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="/images/slide2.jpeg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <!-- <button class="play-btn" aria-label="play adex intro"> -->
+                      <!-- <ion-icon name="play" aria-hidden="true"></ion-icon> -->
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="/images/slide1.jpeg" width="575" height="550" alt="" class="img-cover">
+                     <!-- <video style="--width: 575; --height: 550;" src="/images/2308576-hd_1920_1080_30fps.mp4" ></video> -->
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section style="background-color:#262840;" class="section service animate-top " id="services"    aria-labelledby="service-label">
+        <div class="container">
+
+          <h3 class="section-subtitle" style="color:#FFC72C; font-size:xx-large; "  id="service-label animate-top">Services we provide for Our Clients</h3>
+<!-- <h1>Our Services</h1> -->
+          <h2  style="color:white; font-size: larger;" class="h2 section-title animate-top">
+            We offer custom solutions tailored to your needs, driving success and optimizing operations
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div style="background: #191f36; color :white"  class="service-card animate-top">
+
+                <div style="color:white ; background-color: #FFC72C;" class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 style="color:#FFC72C" class="h4 card-title">RECRUITMENT CONSULTING</h3>
+
+                <p style="font-size: small;" class="card-text">
+                  Our expert team of experienced consultants provide excellent recruitment services making the hiring process smooth . 
+
+
+                </p>
+
+                <a href="/service1.html" class="btn-text">
+                  <span style="color:#FFC72C" class="span">Learn More</span>
+
+                  <ion-icon style="color:#FFC72C;" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div style="background: #191f36; color :white" class="service-card  animate-top">
+
+                <div  style="color:white ; background-color: #FFC72C;" class="card-icon">
+                  <ion-icon   name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3  style="color:#FFC72C" class="h4 card-title">HRMS & ASSESSMENT
+                  PRODUCT</h3>
+
+                <p style="font-size: small;" class="card-text">
+                  Technology, Customers & Markets are changing faster than ever & businesses are transforming to  keep ahead.
+                </p>
+
+                <a href="/service2.html" class="btn-text">
+                  <span style="color:#FFC72C" class="span">Learn More</span>
+
+                  <ion-icon style="color:#FFC72C;" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div style="background: #191f36; color :white"  class="service-card animate-top">
+
+                <div style="color:white ; background-color: #FFC72C;" class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 style="color:#FFC72C" class="h4 card-title">
+                  TECH OUTSOURCING
+                  </h3>
+
+                <p  style="font-size: small;" class="card-text">
+                  When you don’t want to manage all Tech processes in-house, you can think of tech outsourcing to an experienced provider.
+                </p>
+
+                <a href="/service4.html" class="btn-text">
+                  <span style="color:#FFC72C" class="span">Learn More</span>
+
+                  <ion-icon  style="color:#FFC72C;" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div style="background: #191f36; color :white"  class="service-card animate-top">
+
+                <div  style="color:white ; background-color: #FFC72C;" class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3  style="color:#FFC72C" class="h4 card-title">TRAINING & DEVELOPMENT
+                </h3>
+
+                <p style="font-size: small;" class="card-text">
+                  We believe in providing quality corporate training solution that has a direct impact on client's prime performance indicators.
+                </p>
+
+                <a href="/service3.html" class="btn-text">
+                  <span style="color:#FFC72C" class="span">Learn More</span>
+
+                  <ion-icon style="color:#FFC72C;" name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section style="background-color: #191f36;" class="about " id="aboutus" aria-labelledby="about-label">
+        <div class="container">
+          
+          <div class="about-content animate-top">
+            <p class="section-subtitle" style="color:#FFC72C; font-size: xx-large; margin-top: 30px;" id="about-label">About Us?</p>
+            <h2 style="color: white; font-size:larger;"  class="h2 section-title">Empowering Your Business with Tailored HR Solutions</h2>
+            <ul style="color: white;">
+              <li class="about-item ">
+                <div class="accordion-card expanded" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span style="color:#FFC72C" class="span h5">Comprehensive HR Services</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    HireDuo offers a wide range of HR solutions tailored to meet the diverse needs of its clients. This includes contract and general staffing services, IT recruitment, and managed services. Their broad service offering ensures that they can address various hiring and staffing challenges effectively, whether it’s finding temporary staff, sourcing IT talent, or managing overall recruitment processes.
+                  </p>
+                </div>
+              </li>
+              <li class="about-item ">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span style="color:#FFC72C"  class="span h5">Experience and Expertise</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    Established in 2015 and with ten years of experience, HireDuo has built a reputation for excellence in the HR industry. Their team of highly qualified professionals brings extensive knowledge and expertise to the table, which helps them provide top-notch recruitment and staffing solutions. This wealth of experience is instrumental in understanding client needs and delivering tailored solutions that enhance client satisfaction.
+                  </p>
+                </div>
+              </li>
+              <li class="about-item ">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span style="color:#FFC72C"  class="span h5">Extensive Client Reach</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    Headquartered in Kolkata, HireDuo has expanded its reach to serve over 100 clients across India and internationally. This broad client base highlights their capability to manage and support a diverse range of organizations, reflecting their adaptability and effectiveness in various market conditions. Their commitment to client satisfaction is evident through their extensive network and successful track record.
+                  </p>
+                </div>
+              </li>
+            </ul> 
+            
+          </div>
+          <figure class="about-banner animate-top">
+            <img src="/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner" class="w-100">
+          </figure>
+        </div>
+      </section>
+    
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <!-- <section style="background-color: #191f36;" class="section feature animate-top " aria-labelledby="feature-label">
+        <div style="background-color: #191f36; color:white" class="container">
+
+          <figure  class="feature-banner">
+            <img src="/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content animate-top">
+
+            <p class="section-subtitle" style="color:#FFC72C; font-size: x-large; " id="feautre-label">Our Solutions</p>
+
+            <h2 style="color: white;" class="h2 section-title">
+              We help you manage HR tasks effortlessly, providing clear control and improved efficiency.
+            </h2>
+
+            <h1 class="section-text">
+              Areas We Work in
+
+
+            </h1>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span ">
+                    
+                ​MANAGEMENT & CEO'S
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    SALES & MARKETING
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    BANKING & FINANCE
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    
+               ACCOUNTS & COMMERCIAL
+                  </span>
+
+                </div>
+              </li>
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    
+            TOOLS & MAINTENANCE
+                  </span>
+
+                </div>
+              </li>
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    PROCESS & PRODUCTION
+                    
+                  </span>
+
+                </div>
+              </li>
+              <li>
+                <div class="feature-card animate-left">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    PURCHASE & PROCUREMENT
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+      <section style="background-color: #262840;" class="industries">
+        <h2 style="font-size:xx-large;">AREAS WE WORK IN</h2>
+        <p style="font-size:large;" >HR outsourcing has become a dependable way for organizations to reduce operating costs, streamline internal processes, and focus on core business operations. HireDuo provides its HR solutions and services to almost all industries, and for companies of all sizes ranging from small start-ups to multinational corporations.</p>
+        
+        <div class="industry-cards">
+            <div  class="industry-card">
+                <img src="/images/management.png" alt="Management & CXO's">
+                <h6 >MANAGEMENT & CXO'S</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/payment-method.png" alt="Sales & Marketing">
+                <h6>SALES & MARKETING</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/management.png" alt="Purchase & Procurement">
+                <h6>PURCHASE & PROCUREMENT</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/accounting.png" alt="Accounts & Commercial">
+                <h6>ACCOUNTS & COMMERCIAL</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/bank.png" alt="Banking & Finance">
+                <h6>BANKING & FINANCE</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/agreement.png" alt="Legal & Statutory">
+                <h6>LEGAL & STATUTORY</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/process.png" alt="Process & Production">
+                <h6>PROCESS & PRODUCTION</h6>
+            </div>
+            <div class="industry-card">
+                <img src="/images/settings.png" alt="Logistics & SCM">
+                <h6>LOGISTICS & SCM</h6>
+            </div> 
+            <!-- <div class="industry-card">
+                <img src="/images/acquisition.png" alt="Tools & Maintenance">
+                <h6>TOOLS & MAINTENANCE</h6>
+            </div> -->
+        </div>
+    </section>
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <!-- <section style="margin-top: 0;"   class="stats animate-top" aria-label="our stats">
+        <div style="z-index: 200;"  class="container">
+
+          <ul   class="stats-card has-bg-image" style="background: #FFC72C">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">100+</span>
+
+                <spna class="span">Clients Served</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">10+</span>
+
+                <spna class="span">Years of Experience</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">1000+</span>
+
+                <spna class="span">Successful Placements</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">90%</span>
+
+                <spna class="span">Client Satisfaction Rate</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section id="Blogs" class="section project animate-top" aria-labelledby="project-label">
+        <div class="container" >
+
+          <p class="section-subtitle" tyle="color:#FFC72C; font-size: xx-large; " style="color:#FFC72C; font-size: x-large; " id="project-label">Blogs</p>
+
+          <h2 style="font-size:larger;" class="h2 section-title">
+            Check out some of our awesome Blogs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner animate-top img-holder" style="--width: 560; --height: 350;">
+                  <img src="/images/blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="/blogs/blog1.html" class="card-title">The Future of Hiring: Top Trends to Watch in 2023
+
+                      
+                      </a>
+                  </h3>
+
+                  <p class="card-text">
+                    The Covid-19 pandemic has unleashed new ways of working and has compelled organizations worldwide to make bold changes in their hiring and recruiting landscape. 
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2023-05-74">17 May 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Hiring</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner animate-top img-holder" style="--width: 560; --height: 350;">
+                  <img src="/images/blog-2.jpg" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="/blogs/blog2.html" class="card-title">How to make a resume that stands out in 2023?
+
+                     
+                      </a>
+                  </h3>
+
+                  <p class="card-text">
+                    With the rise of technology and automation, the job application process has become more challenging than ever.
+
+                    So, if you want to increase your chances of getting hired
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">29 Mar 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Resume</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner  animate-top img-holder" style="--width: 560; --height: 350;">
+                  <img src="/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="/blogs/blog3.html" class="card-title">How to prepare for a job interview?</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Have you ever been so close to getting your dream job, only to have it slip through your fingers after a bad interview?
+
+                    It's happened to the best of us, but fear not!
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26 Feb 2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Interview</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+ 
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <!-- <section style="background: #282f4a;" class="cta animate-top" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Our Advisor Group Is Committed To Help Clients
+          </h2>
+
+          <a href="#" style="background-image: #FFC72C;" class=" btn-outline btn">BOOK APPOINTMENT</a>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer animate-top">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <li>
+            <p class="h4 footer-list-title">HireDuo</p>
+          </li>
+          <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home"> -->
+        </a>
+
+        <p class="footer-text">
+          &copy; 2024 Hireduo Resource Pvt Ltd. <br> All rights reserved.
+        </p>
+        <li>
+          <p class="h4 footer-list-title">+91 81001 47412</p>
+        </li>
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/hireduojobs" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+         
+
+          <li>
+            <a href="https://www.linkedin.com/company/hireduo-resources-private-limited/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+         
+          
+         
+         
+        
+        </ul>
+        
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Address</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Harrington Mansion, Kolkata 700 071, West Bengal, India
+
+
+          </address>
+          </li>
+     
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="/index.html#aboutus" class=" h4 footer-list-title footer-link"> About US </a>
+        </li>
+
+        <li>
+          <a href="/index.html#services" class="footer-link">Services</a>
+        </li>
+
+        <li>
+          <a href="/index.html#Blogs" class="footer-link">Blog</a>
+        </li>
+
+        <li>
+          <a href="/career/careers.html" class="footer-link">Careers</a>
+        </li>
+
+        <li>
+          <!-- <a href="#" class="footer-link">Terms of Use</a> -->
+          <a href="mailto:reachus@hireduo.com" class="footer-link">reachus@hireduo.com</a>
+        </li>
+
+       
+
+      </ul>
+
+      <div class="footer-list">
+        <a href="#" class=" h4 footer-list-title footer-link"> Locate Us </a>
+        <p class="h4 footer-list-title">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.2264524638827!2d88.34371147384971!3d22.57063223304526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02773f82d6e9ff%3A0xaef64789d13849ec!2sHireduo%20Resources%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1724306909576!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+          </iframe>
+        </p>
+
+        <!-- <p class="footer-text">
+          Subscribe to our newsletter to get our news & deals delivered to you.
+        </p> -->
+
+       
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+   document.querySelectorAll('[data-accordion-btn]').forEach(button => {
+  button.addEventListener('click', () => {
+    // Find the accordion container
+    const accordion = button.closest('[data-accordion]');
+    
+    // Close all accordion sections
+    document.querySelectorAll('[data-accordion]').forEach(section => {
+      if (section !== accordion) {
+        section.classList.remove('expanded');
+      }
+    });
+
+    // Toggle the clicked section
+    accordion.classList.toggle('expanded');
+  });
+});
+
+    // this is script for slider in lander page
+    // this is for scroll reveal
+     // Initialize ScrollReveal
+  ScrollReveal().reveal('.animate-left', {
+    origin: 'left',
+    distance: '20px',
+    duration: 1000,
+    delay: 100,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.animate-right', {
+    origin: 'right',
+    distance: '20px',
+    duration: 1000,
+    delay: 100,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.animate-top', {
+    // origin: 'top',
+    // distance: '20px',
+    // duration: 1000,
+    // delay: 100,
+    // easing: 'ease-in-out',
+    // reset: true
+    origin: 'bottom',       // Origin from the bottom to give a sense of rising up
+    distance: '30px',       // Slightly more distance for a more noticeable effect
+    duration: 800,         // Shorter duration for a quicker, snappier animation
+    delay: 200,            // Slightly longer delay for a staggered effect
+    easing: 'ease-out',    // Easing out for a smooth finish
+    reset: true  
+  });
+
+  ScrollReveal().reveal('.animate-bottom', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 1000,
+    delay: 100,
+    easing: 'ease-in-out',
+    reset: true
+  });
+
+  ScrollReveal().reveal('.animate-navbar', {
+    origin: 'top',         // Slide in from the top
+    distance: '10px',      // Short distance for a subtle effect
+    duration: 600,        // Shorter duration for a quick reveal
+    delay: 0,             // No delay, reveal immediately when scrolled into view
+    easing: 'ease-out',   // Smooth easing out
+    reset: false          // Animate only once
+});
+  </script>
+</body>
+
+</html>
